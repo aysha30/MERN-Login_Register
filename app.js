@@ -23,6 +23,7 @@ const middleware = (req, res, next) => {
 // });
 
 app.get('/about', middleware, (req, res) => {
+    res.cookie("testtoken", "aysha")
     res.send('helloabout');
 });
 
